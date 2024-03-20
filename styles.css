@@ -1,0 +1,77 @@
+*{
+     margin: 0;
+     padding:0;
+     box-sizing: border-box;
+}
+.container{
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     min-height: 100vh;
+     background-color: aliceblue;
+}
+.message{
+     display: none;
+     background-color: darkblue;
+     color: white;
+     padding: 10px 30px;
+     min-width: 15rem;
+     text-align: center;
+}
+.playersInfo{
+     width: 40%;
+}
+.player1Info{
+     margin: 1.5rem 0;
+}
+input{
+     padding: 5px;
+     width: 100%;
+}
+label{
+     margin-bottom: 5px;
+     display: block;
+}
+.buttons{
+     display: flex;
+     gap: 30px;
+}
+button{
+     padding: 10px;
+     background-color: blueviolet;
+     border: none;
+     outline: none;
+     border-radius: 20px;
+     color: white;
+     cursor: pointer;
+}
+.gameboard{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+}
+.square{
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid;
+     width: 80px;
+     height: 80px;
+     text-align: center;
+     font-size: 2rem;
+     font-weight: 800;
+}
+.square:nth-of-type(1),.square:nth-of-type(2),.square:nth-of-type(3){
+     border-top: none;
+}
+.square:nth-of-type(7),.square:nth-of-type(8),.square:nth-of-type(9){
+     border-bottom: none;
+}
+.square:nth-of-type(1),.square:nth-of-type(4),.square:nth-of-type(7){
+     border-left: none;
+}
+.square:nth-of-type(3),.square:nth-of-type(6),.square:nth-of-type(9){
+     border-right: none;
+}
